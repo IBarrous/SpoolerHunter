@@ -14,7 +14,7 @@ if (-not $TargetMachine -and -not $Verbose -and $h)
         It provides options to specify a target machine which is allowed to delegate and enable verbose output.
 
     SYNTAX
-        .\SpoolerHunter.ps1 [[-TargetMachine] <String>] [-Verbose]
+        .\SpoolerHunter.ps1 [[-TargetMachine] <String>] [-Verbose] [-h]
 
     PARAMETERS
         -TargetMachine <String>
@@ -29,7 +29,7 @@ if (-not $TargetMachine -and -not $Verbose -and $h)
         Runs the script with verbose output enabled.
 
         Example 2:
-        PS C:\> .\SpoolerHunter.ps1 -TargetMachine 'dcorp-appsrv.dollarcorp.moneycorp.local'
+        PS C:\> .\SpoolerHunter.ps1 -TargetMachine 'dcorp-srv'
         Runs the script with a specific target machine that has unconstrained delegation enabled.
 
     NOTES
