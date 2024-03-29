@@ -14,8 +14,9 @@ SpoolerHunter is a PowerShell script designed to automate the detection and expl
     <p>Example command:</p>
     <pre><code>.\SpoolerHunter.ps1 [-TargetMachine <String>] [-Verbose] [-h]</code></pre>
 </div>
-Parameters:
-
+Parameters:<br/>
 -TargetMachine <String>: Specifies the target machine for the scan. If not provided, the script scans for unconstrained delegation computers in the domain.
+<br/>
 -Verbose: Enables verbose output, displaying detailed information about the scan and exploitation process.
+<br/>
 -h: Displays the help message, providing information about the script's usage, parameters, and examples.
